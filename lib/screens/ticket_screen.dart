@@ -61,8 +61,8 @@ class TicketScreen extends StatelessWidget {
                       padding: EdgeInsets.only(
                           top: MyAppLayout.getHeight(25),
                           bottom: MyAppLayout.getHeight(25)),
-                      child: Row(
-                        children: const [
+                      child: const Row(
+                        children:  [
                           MyText(
                               heading: "Flutter Dash",
                               subHeading: "Passenger",
@@ -87,8 +87,8 @@ class TicketScreen extends StatelessWidget {
                       padding: EdgeInsets.only(
                           top: MyAppLayout.getHeight(25),
                           bottom: MyAppLayout.getHeight(25)),
-                      child: Row(
-                        children: const [
+                      child: const Row(
+                        children: [
                           MyText(
                               heading: "0055 444 77143",
                               subHeading: "Number of E-ticket",
@@ -142,8 +142,8 @@ class TicketScreen extends StatelessWidget {
                               ),
                             ],
                           ),
-                          Spacer(),
-                          MyText(
+                          const Spacer(),
+                          const MyText(
                               heading: "\$249.99",
                               subHeading: "Price",
                               color: false,
@@ -169,7 +169,7 @@ class TicketScreen extends StatelessWidget {
                           drawText: false,
                           color: MyStyles.textColor,
                           width: double.infinity,
-                          height: 60,
+                          height: 40,
                           errorBuilder: (context, error) =>
                               Center(child: Text(error)),
                         ),
